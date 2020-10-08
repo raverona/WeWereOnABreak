@@ -3,7 +3,7 @@ import logging
 
 from reddit_comment_template import reddit_comment_template
 
-reddit = praw.Reddit('WeWereOnABreakBot')
+reddit = praw.Reddit('WeWereOnABreakBot', config_interpolation="basic")
 
 subreddit = reddit.subreddit('WeWereOnABreakBot')
 
